@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 import static java.lang.System.*;
 
-public class Ejercicio14 {
+public class Digitos2 {
 
     public static int contarNumeros (String cadena){
 
         int numeros = 0;
 
         for (int i = 0; i < cadena.length()-1; i++) {
-            if (Ejercicio13.esDigito(cadena.charAt(i))) {
-                if (!Ejercicio13.esDigito(cadena.charAt(i+1))){
+            if (Digitos.esDigito(cadena.charAt(i))) {
+                if (!Digitos.esDigito(cadena.charAt(i+1))){
                     numeros ++;
                 }
             }
         }
-        if (Ejercicio13.esDigito(cadena.charAt(cadena.length()-1))) {
+        if (Digitos.esDigito(cadena.charAt(cadena.length()-1))) {
             numeros++;
         }
         return numeros;
@@ -34,7 +34,7 @@ public class Ejercicio14 {
         str = input.nextLine();
 
 
-        System.out.println(contarNumeros(str));
+        System.out.println("Números: "+contarNumeros(str));
 
     }
 }

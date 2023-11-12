@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.System.*;
 
-public class Ejercicio13 {
+public class Digitos {
 
 
     public static boolean esDigito (char caracter){
@@ -32,7 +32,7 @@ public class Ejercicio13 {
             }
         }
 
-        System.out.println(digito);
+        System.out.println("Digitos: "+digito);
 
     }
 }
